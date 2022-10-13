@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  color: #3a424f;
+  background-color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+    sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: none !important;
+}
+
+html *,
+html *::before,
+html *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4rem;
+  background-color: white;
+}
+
+strong {
+  font-weight: 600;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
