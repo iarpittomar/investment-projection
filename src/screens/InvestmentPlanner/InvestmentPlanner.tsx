@@ -1,6 +1,6 @@
 import { VStack, Text, Heading, HStack } from '@chakra-ui/react';
 import React from 'react';
-import Chart from '../../Components/AreaChart';
+import Chart from '../../Components/Chart';
 import InvestmentInput from '../../Components/InvestmentInput';
 
 const InvestmentPlanner: React.FC = () => {

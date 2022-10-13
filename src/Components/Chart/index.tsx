@@ -77,6 +77,7 @@ const Chart = () => {
               <XAxis
                 tickFormatter={(tick) => tick.split('-')[0]}
                 dataKey='yearMonth'
+                stroke='#aaa'
               />
               <YAxis
                 tickFormatter={(value) =>
@@ -85,6 +86,7 @@ const Chart = () => {
                     compactDisplay: 'short',
                   }).format(value)}`
                 }
+                stroke='#aaa'
                 orientation='right'
               />
               <Tooltip content={<CustomTooltip />} />
@@ -117,7 +119,7 @@ const Chart = () => {
               <Line
                 type='natural'
                 dataKey='2.5% pa.'
-                stroke='#449699'
+                stroke='#ffa500'
                 strokeWidth={2}
                 dot={false}
               />
