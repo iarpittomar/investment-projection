@@ -3,13 +3,13 @@ import { NumberInput, NumberInputField, Text, VStack } from '@chakra-ui/react';
 
 interface IProps {
   label: string;
+  value: string | number;
+  setValue: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const InputBox: React.FC<IProps> = ({ label }) => {
+const InputBox: React.FC<IProps> = ({ label, value, setValue }) => {
   const format = (val: number | string) => `$` + val;
   const parse = (val: string) => val.replace(/^\$/, '');
-
-  const [value, setValue] = React.useState('1.53');
 
   const handleChange = (valueString: string) => {
     setValue(parse(valueString));

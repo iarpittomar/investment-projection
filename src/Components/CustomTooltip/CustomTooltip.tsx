@@ -25,7 +25,7 @@ const CustomTooltip: React.FC<ITooltip> = ({
           </Text>
           <Text color='gray.400'>Chance of outcome</Text>
           {payload.map((item, index) => (
-            <React.Fragment>
+            <React.Fragment key={item.name + index}>
               <Flex
                 color={item.name !== 'Median' ? 'gray.400' : 'primary.500'}
                 w='100%'
