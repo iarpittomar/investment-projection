@@ -1,7 +1,8 @@
-import { Text, VStack } from '@chakra-ui/react';
+import { Text, Tooltip, VStack } from '@chakra-ui/react';
 import React from 'react';
 import { useInvestmentPlanner } from '../../Context/InvestmentPlannerContext';
 import InputBox from '../InputBox';
+import { InfoIcon } from '@chakra-ui/icons';
 
 const InvestmentInput: React.FC = () => {
   const {
@@ -26,7 +27,13 @@ const InvestmentInput: React.FC = () => {
         <Text>
           Recommended:
           <Text as='span' color='primary.500' ml={2}>
-            S$1,140
+            S$1,140{' '}
+            <Tooltip
+              label='This ammount is recommended by over system.'
+              aria-label='Recommended'
+            >
+              <InfoIcon />
+            </Tooltip>
           </Text>
         </Text>
       </VStack>
